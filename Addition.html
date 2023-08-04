@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<style>
+    body {
+        background-color: pink;
+    }
+
+    #n1 {
+        font-size: 23px;
+        color: purple;
+        background-color: plum;
+        text-align: center;
+    }
+
+    #n2 {
+        font-size: 23px;
+        color: purple;
+        background-color: plum;
+        text-align: center;
+    }
+
+    button {
+        font-size: 23px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <form action="">
+        <input type="text" name="n1" id="n1"> <br> <br>
+        <input type="text" name="n2" id="n2"> <br> <br>
+        <button onclick="handleEvent()">Add</button>
+    </form>
+    <script>
+        function handleEvent() {
+            let a = parseInt(document.getElementById("n1").value);
+            let b = parseInt(document.getElementById("n2").value);
+            alert(a + b);
+        }
+    </script>
+</body>
+
+</html>
