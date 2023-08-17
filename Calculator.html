@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style_calc.css">
+</head>
+
+<body>
+    <h1>Calculator Using JavaScript!</h1>
+    <div class="maindiv">
+        <form name="calculator">
+            <input type="text" name="calc" id="ans">
+
+                <input type="button" value="1" onclick="calculator.calc.value += '1' ">
+                <input type="button" value="2" onclick="calculator.calc.value += '2' ">
+                <input type="button" value="3" onclick="calculator.calc.value += '3' ">
+
+                <input type="button" value="4" onclick="calculator.calc.value += '4' ">
+                <input type="button" value="5" onclick="calculator.calc.value += '5' ">
+                <input type="button" value="6" onclick="calculator.calc.value += '6' ">
+
+                <input type="button" value="7" onclick="calculator.calc.value += '7' ">
+                <input type="button" value="8" onclick="calculator.calc.value += '8' ">
+                <input type="button" value="9" onclick="calculator.calc.value += '9' ">
+
+                <input type="button" value="0" onclick="calculator.calc.value += '0' ">
+                <input type="button" value="00" onclick="calculator.calc.value += '00' ">
+                <input type="button" value="." onclick="calculator.calc.value += '.' ">
+
+                <input type="button" value="+" onclick="calculator.calc.value += '+' ">
+                <input type="button" value="-" onclick="calculator.calc.value += '-' ">
+                <input type="button" value="*" onclick="calculator.calc.value += '*' ">
+                <input type="button" value="/" onclick="calculator.calc.value += '/' ">
+                <input type="button" value="=" onclick="calculator.calc.value = eval(calculator.calc.value)">
+           
+           <input type="button" value="clear" id="equal" onclick="calculator.calc.value = '' ">
+        </form>
+    </div>
+
+</body>
+
+</html>

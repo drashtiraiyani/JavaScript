@@ -1,0 +1,36 @@
+.maindiv {
+    width: 30%;
+}
+
+#calc {
+    width: 98.5%;
+    background-color: lightgray;
+    padding-top: 15px;
+}
+
+.div1 {
+    display: flex;
+}
+
+.div2 {
+    display: flex;
+}
+
+.div3 {
+    display: flex;
+}
+
+.div4 {
+    display: flex;
+}
+
+button {
+    height: 50px;
+    width: 80%;
+}
+
+#clear {
+    width: 100%;
+    background-color: lightgray;
+}
+
