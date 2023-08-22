@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop - Pyramid</title>
+</head>
+
+<body>
+    <script>
+        let a = 10;
+        let b = " ";
+        for (let d = 1; d <= 11; d++) {
+            for (let c = 1; c < d; c++) {
+                // document.write(c); 
+                document.write("* ")
+            }
+            document.write("<br><br>");
+        }
+        document.getElementByClass("output1").textContent = b;
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- a = 10
+b = " "
+d = 1
+    1 <= 10  yes   2
+c = 1
+    1 < d(2)   yes   2
+
+1
+12 -->
