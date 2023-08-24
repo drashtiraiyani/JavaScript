@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Sign in</legend>
+        <form action="">
+            <label for="Name" name="Uname">Username:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="uname" id="uname" placeholder="Username" onblur="validateForm(this, 'error')">
+            <span id="error"></span> <br>
+            <label for="Name" name="Uname">Email:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="umail" id="umail" placeholder="Email" onblur="validateForm(this, 'err101')">
+            <span id="err101"></span> <br>
+            <label for="Name">Password:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="upass" name="upass" placeholder="Password"
+                onblur="validateForm(this, 'errorPswd')">
+            <span id="errorPswd"></span> <br>
+            <label for="MobNo">Mobile No.:</label>
+            <input type="tel" id="mob" name="mob" placeholder="Contact No." maxlength="10"
+                onblur="validateForm(this, 'err102')">
+            <span id="err102"></span>
+            <button type="submit" value="submit">Submit it</button>
+        </form>
+    </fieldset>
+    <script>
+        function validateForm(e, x, y, z) {
+            // let username = document.getElementById("uname").value
+            // console.log(username)
+            // let a = document.getElementById("error").innerText = "This is required"
+            // console.log(a)
+
+            if (e.value == "") {
+                document.getElementById("error").style.color = "red"
+                document.getElementById("error").innerText = " * Name is required "
+                document.getElementById(x).style.color = "red"
+                document.getElementById(x).innerText = " * Email is required"
+                document.getElementById(y).style.color = "red"
+                document.getElementById(y).innerText = " * Password is required"
+                document.getElementById(y).innerText = "red"
+                document.getElementById(z).innerText = " * Contact information is required"
+            }
+            else {
+                document.getElementById("error").innerText = ""
+                document.getElementById(x).innerText = ""
+                document.getElementByIdy(y).innerText = ""
+                document.getElementById(z).innerText = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
