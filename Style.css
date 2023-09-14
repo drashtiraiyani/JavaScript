@@ -1,0 +1,15 @@
+.main-div{
+    width: 40%;
+}
+
+.div[Class*=content]{
+    padding: 50px;
+}
+
+.main-div{
+    position: fixed;
+}
+
+.container{
+    padding-bottom: 50px;
+}
